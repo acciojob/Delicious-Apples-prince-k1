@@ -1,1 +1,177 @@
 /* your code here */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  background-color: #10E37F;
+  position: relative;
+}
+
+.product{
+  margin-top: 50px;
+  height: 80vh;
+  width: 50vw;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  position: relative;
+  gap: 20px;
+}
+li{
+  list-style: none;
+}
+.product_photo{
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  /* left: -40px; */
+  /* top: 10vh; */
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  margin: 10px;
+  gap: 50px;
+  background-color: white;
+  
+}
+
+.controls{
+  display: flex;
+  gap: 200px;
+  justify-content: space-around;
+  width: 100%;
+  color: white;
+  padding: 1px;
+}
+.photo-main{
+  background-color: #ACE62D;
+  height: 60vh;
+  width: 20vw;
+  position: absolute;
+  left: -40px;
+  top: 20px;
+}
+
+
+
+.photo-main > img{
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: -80px;
+}
+.photo-album{
+  position: absolute;
+  top: 63.2vh;
+  left: -40px;
+  justify-content: center;
+  width: 20vh;
+  height: 15vh;
+  background-color: white;
+
+}
+.photo-album > ul{
+  padding-top: 20px;
+  display: flex;
+  gap: 5px;
+  padding-top: 20px;
+  /* background-color: whitesmoke; */
+  
+}
+
+.photo-album > ul > li{
+  border: 0.2px solid #D3D3D3;
+  background-color: white;
+}
+
+
+.product-info{
+  /* padding-top: 10%; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.title{
+  margin-top: 10%;
+}
+
+.title > h1{
+  color: #4C4C4C;
+  font-size: 32px;
+}
+
+.title > span{
+  color: #AAAAAA;
+}
+
+.price{
+  padding-top: 10px;
+  height: 50px;
+  font-size: 30px;
+  color: red;
+}
+
+.price > span {
+  font-size: 50px;
+}
+
+.variant > h3 {
+  color: #AAAAAA;
+  margin-top: 10px;
+}
+
+.variant > ul {
+  display: flex;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.variant > ul > li {
+  border: 0.2px solid #D3D3D3;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.description > h3{
+  color: #AAAAAA;
+  margin-top: 10px;
+}
+.description > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  margin-left: 30px;
+}
+.description > ul > li{
+  list-style:disc;
+  font-size: large;
+}
+
+button{
+  background-color: #FE3F40;
+  border: none;
+  width: 40%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: larger;
+  color: white;
+  padding: 10px;
+}
+
